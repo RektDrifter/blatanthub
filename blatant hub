@@ -1,0 +1,113 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Blatant Hub", "Ocean")
+    -- MAIN
+    local Main = Window:NewTab("Universal")
+    local MainSection = Main:NewSection("Universal")
+
+
+    MainSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
+    end)
+
+    MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
+        if state then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+        else
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        end
+    end)
+
+    MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+    MainSection:NewButton("ESP", "Universal ESP", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'),true))()
+    end)
+
+
+    --LOCAL PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+    end)
+
+    PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    end)
+
+    PlayerSection:NewButton("Reset WalkSpeed/JumpPower", "Resets to all defaults", function()
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end)
+
+    local Main = Window:NewTab("Jailbreak")
+    local MainSection = Main:NewSection("Jailbreak")
+
+    MainSection:NewButton("Autorob", "Runs Autorob script", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1'))()
+    end)
+
+    MainSection:NewButton("Vynixius", "Runs Vynixius script", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua'))()
+    end)
+
+    MainSection:NewButton("Evo", "Runs Evo script", function()
+        loadstring(game:HttpGet('https://projectevo.xyz/script/loader.lua'))()
+    end)
+
+    local Main = Window:NewTab("Arsenal")
+    local MainSection = Main:NewSection("Arsenal")
+
+    MainSection:NewButton("OwlHub", "Runs OwlHub script", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'))()
+    end)
+
+    MainSection:NewButton("Aimbot", "Runs Aimbot script", function()
+        _G.AimbotInput = "RightClick" -- // RightClick, LeftClick, Q, etc...
+    _G.AimbotEasing = 0.2 -- // Stage of Linear Easing to target when enabled
+    _G.TeamCheck = true -- // Checks the team of the target to make sure they're not on your team
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zeroisswag/universal-aimbot/main/script.lua"))()
+    end)
+
+    local Main = Window:NewTab("Phantom Forces")
+    local MainSection = Main:NewSection("Phantom Forces")
+
+    MainSection:NewButton("Get all", "You can get all items", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/VoidMasterX/Releases/main/PF_UnlockAll.lua'))()
+    end)
+
+    MainSection:NewButton("ESP", "Runs ESP script", function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/KPuUnHDA'))()
+    end)
+
+    local Main = Window:NewTab("Miscellaneous")
+    local MainSection = Main:NewSection("Miscellaneous")
+
+    
+    MainSection:NewButton("Infinite Jump", "Turns on infinite jump. Keybind V (ON/OFF)", function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/2wgbZ6Xd'))()
+    end)
+
+    MainSection:NewButton("Fly", "Makes you fly", function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/fPtT2Q1F'))()
+    end)
+
+    local Main = Window:NewTab("Credits")
+    local MainSection = Main:NewSection("Credits")
+
+    MainSection:NewButton("Credits to FingerGamer100#2967", "Shows Creator", function()
+    end)     
+
+    
+
+
+
+
+
+
+    
